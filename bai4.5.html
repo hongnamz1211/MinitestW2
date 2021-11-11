@@ -13,12 +13,12 @@
     let canhC = +prompt("Nhập cạnh C");
 
     if (canhA > 0 && canhB > 0 && canhC > 0) {
-        if (canhA + canhB > canhC && canhA + canhC > canhB && canhB + canhC > canhA) {
-            alert("Cạnh A, B, C là ba cạnh tam giác")
-        } else if (canhA === canhB && canhA === canhC) {
+        if (canhA === canhB && canhA === canhC) {
             alert("Tam giác đều")
         } else if (canhA ** 2 === canhB ** 2 + canhC ** 2 || canhB ** 2 === canhA ** 2 + canhC ** 2 || canhC ** 2 === canhB ** 2 + canhA ** 2) {
             alert("Tam giác vuông")
+        } else  if (canhA + canhB > canhC && canhA + canhC > canhB && canhB + canhC > canhA) {
+            alert("Cạnh A, B, C là ba cạnh tam giác")
         }
     }
 
