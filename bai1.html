@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="giatriA" placeholder="Nhập giá trị A">
+    <input type="text" id="giatriB" placeholder="Nhập giá trị B">
+    <input type="button" value="Tính S" onclick="showMessage()">
+    <h1 id="giatriS"></h1>
+</form>
+</body>
+<script>
+    // // bai1
+    // alert("Nguyễn Hồng Nam");
+
+
+    // // bai2
+    // let giatri = +prompt("Nhập giá trị","");
+    // alert("Bình phương của số đó là: " + giatri ** 2);
+
+
+    // bai3
+    function showMessage() {
+        let giatriA = document.getElementById('giatriA').value;
+        let giatriB = document.getElementById('giatriB').value;
+        document.getElementById('giatriS').innerText = "Giá trị S = " + giatriA * giatriB;
+    }
+
+</script>
+</html>

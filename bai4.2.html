@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="giatriA" placeholder="Nhập giá trị A">
+<input type="text" id="giatriB" placeholder="Nhập giá trị B">
+<input type="button" value="Tính S" onclick="showMessage()">
+<h1 id="displayA"></h1>
+<h1 id="displayB"></h1>
+</body>
+<script>
+    function showMessage() {
+        let giaTriA = document.getElementById('giatriA').value;
+        let giaTriB = document.getElementById('giatriB').value;
+        document.getElementById('displayA').innerText = "Giá trị A^2 = " + giaTriA ** 2;
+        document.getElementById('displayB').innerText = "Giá trị B^2 = " + giaTriB ** 2;
+    }
+</script>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let giaTriA = +prompt("Nhập giá trị A")
+    let giaTriB = +prompt("Nhập giá trị B")
+    let number = (giaTriB - giaTriA) / 2
+    let soHang = Math.floor(number)
+    if (giaTriA < giaTriB) {
+        alert("Tổng các số từ A đến B = " + ((giaTriA + giaTriB) * soHang) / 2)
+    } else {
+        alert("Error")
+    }
+</script>
+</html>
